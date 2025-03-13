@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@Service
+@Service //to identify this class as service class by compiler
 public class JournalEntryService {
     private final JournalEntryRepository journalEntryRepository;
     private final UserService userService;
