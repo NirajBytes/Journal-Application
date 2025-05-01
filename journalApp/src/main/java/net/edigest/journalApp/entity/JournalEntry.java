@@ -7,9 +7,11 @@ import com.mongodb.lang.NonNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 @Document(collection = "journal_entries")
 public class JournalEntry {
 	@Id
@@ -18,10 +20,7 @@ public class JournalEntry {
 	@NonNull
 	private String title;
 	private LocalDateTime date;
-	@Override
-	public String toString() {
-		return "JournalEntry [id=" + id + ", content=" + content + ", title=" + title + "]";
-	}
+
 	
 	
 	
