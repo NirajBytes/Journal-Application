@@ -19,10 +19,5 @@ public class JournalEntry {
 	private String content;
 	@NonNull
 	private String title;
-	private LocalDateTime date;
-
-	
-	
-	
-	
+	private LocalDateTime date;	
 }
